@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Inserir Pedido</title>
+	<style>
+		body {
+  			background-color: linen;
+		}
+		fieldset{
+			background-color: silver;
+			position: absolute;
+			width: 300px;
+			height: 300px;
+		}
+		legend{
+			font-size: 20px;
+			color: #000000;
+			background-color: white;
+			font-weight: bold;
+			border: solid 2px;
+		}
+		input[type=text]{
+		width: 75%;
+		}
+	</style>
+</head>
+<body>
+	<form enctype="multipart/form-data" action="recebe3.php" method="POST">
+		<fieldset>
+			<legend>Enviando Arquivos</legend>
+			Selecione arquivo:
+			<input type="file" name="meuarquivo"><br/><br/>
+			<input type="submit" name="submit" value="Enviar">			
+		</fieldset>
+	</form>		
+</body>
+</html>
